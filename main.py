@@ -6,6 +6,7 @@ class Main:
         pyxel.init(128, 128, title="NDC")
         pyxel.run(self.update, self.draw)
 
+
     def update(self):
         pass
 
