@@ -1,16 +1,17 @@
-# This is a sample Python script.
-
-# Press Maj+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+import pyxel
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint. tedst
+class Main:
+    def __init__(self):
+        pyxel.init(128, 128, title="NDC")
+        pyxel.run(self.update, self.draw)
+
+    def update(self):
+        pass
+
+    def draw(self):
+        pyxel.cls(0)
 
 
-# Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+    main = Main()
